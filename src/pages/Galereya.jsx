@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Gallery from 'react-photo-gallery';
+// import Gallery from 'react-photo-gallery';
 import { Skeleton, Card, Typography, Image } from 'antd'; // Typography for text styling
 import { photos, videos } from '../fakeDatas/galereya';
 
@@ -32,7 +32,7 @@ const Galereya = () => {
       {/* Photos Section */}
       <div className="text-center">
         <h1 className="text-3xl font-bold my-6 text-[#32CD32]">Galereya</h1>
-        <Gallery photos={photos} />
+        {/* <Gallery photos={photos} /> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
           {photos.map((photo, index) => (
             <Card key={index} bordered={false} style={{ width: '98%' }}>
