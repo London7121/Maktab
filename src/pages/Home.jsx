@@ -5,11 +5,11 @@ import Galereya from './Galereya'
 import News from './News'
 import Qabul from './Qabul'
 import Contact from './Contact'
+import '../App.css'
 
 const Home = () => {
   return (
-    <div>
-      {/* <h1>Bosh Sahifa</h1> */}
+    <div className=''>
       <About />
       <Teachers />
       <News />

@@ -27,7 +27,7 @@ export const ScrollToTopBtn = () => {
         isVisible && (
             <button
                 onClick={handleScrollToTop}
-                className="fixed bottom-5 z-10 text-[20px] right-5 p-3 w-[50px] rounded-full bg-[#32CD32] text-white text-lg shadow-md hover:bg-[#36CD32] transition-all duration-300"
+                className="fixed bottom-5 z-10 text-[28px] right-5 p-2 w-[50px] h-[50px] bg-[#6e54d8] rounded-full backdrop-blur-lg text-white text-lg shadow-md transition-all duration-300"
             >
                 ↑
             </button>

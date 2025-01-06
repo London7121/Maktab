@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRightOutlined } from '@ant-design/icons'; // Import Ant Design icon
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Skeleton } from 'antd';
+import { Image, Skeleton } from 'antd';
 import newsItems from '../fakeDatas/news';
 
 const News = () => {
@@ -11,20 +11,18 @@ const News = () => {
 
   useEffect(() => {
     AOS.init();
-
-    // Simulate data loading for 2 seconds
     setTimeout(() => {
       setLoading(false);
     }, 1000);
   }, []);
 
   const truncateDescription = (description) => {
-    return description.length > 70 ? description.slice(0, 99) + '...' : description;
+    return description.length > 70 ? description.slice(0, 90) + '...' : description;
   };
 
   return (
-    <div className='text-center'>
-      <h1 className='text-3xl font-bold my-6 text-[#32CD32]'>Yangiliklar</h1>
+    <div className='text-center font-afacad'>
+      <h1 className='text-3xl font-bold my-6 text-[#6e54d8] font-afacad'>Yangiliklar</h1>
       <div className='w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {loading ? (
           [...Array(3)].map((_, index) => (
@@ -33,16 +31,17 @@ const News = () => {
             </div>
           ))
         ) : (
-          // Display actual content when loading is complete
-          newsItems.map((news, index) => (
-            <div key={index} className='border rounded-lg shadow-md flex flex-col items-start justify-between' data-aos="fade-up">
-              <img src={news.image} alt={news.title} className='w-full h-48 object-cover rounded' />
-              <h2 className='text-xl font-semibold mt-2 text-start p-2'>{news.title}</h2>
-              <p className='text-lg text-start pl-2'>{truncateDescription(news.description)}</p>
+          newsItems.uz.map((news, index) => (
+            <div key={index} className=' rounded-lg shadow-md flex flex-col items-center justify-between' >
+              <Image width={"100%"} height={280} src={news.image} alt={news.title} className='object-cover rounded-md rounded-b-none' />
+              <div className=' w-full flex flex-col items-start justify-between px-1'>
+                <h2 className='text-xl font-semibold mt-2 text-start p-2'>{news.title}</h2>
+                <p className='text-lg text-start pl-2'>{(news.description)}</p>
+              </div>
 
               {/* Centered Link */}
-              <div className="flex justify-center mt-3 pl-[78%] pb-2">
-                <Link to={news.link} className='text-[#32CD32] text-lg hover:text-[#36CD32] animate-pulse'>
+              <div className="flex justify-center ml-[68%] md:ml-[72%] py-2">
+                <Link to={news.link} className='text-[#2b82fc] text-lg hover:text-[#2b82fc] animate-pulse'>
                   Batafsil
                   <ArrowRightOutlined className="ml-2 animate-pulse" />
                 </Link>

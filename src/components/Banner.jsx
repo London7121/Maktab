@@ -35,16 +35,16 @@ const Banner = ({ slide }) => {
                 {/* <div className="swiper-button-prev-custom" style={{ color: '#32CD32', position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }}>Prev</div> */}
                 {slide.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative w-full h-[300px] md:h-screen lg:h-screen">
+                        <div className="relative mx-auto  w-full h-[300px] md:h-screen">
                             <div
-                                className="absolute inset-0 bg-cover bg-center filter blur-sm brightness-50"
+                                className="absolute inset-0 bg-cover bg-center filter blur-s brightness-50"
                                 style={{ backgroundImage: `url(${item.image})` }}
                             ></div>
-                            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 z-10">
+                            <div className="absolute inset-0 flex flex-col justify-center items-start top-[150px] text-center text-white p-4 z-10">
                                 <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold animate-pulse">
                                     {item.title}
                                 </h2>
-                                <p className="mt-4 text-lg md:text-xl lg:text-2xl animate-pulse">
+                                <p className="mt-2 sm:mt-4 text-lg md:text-xl lg:text-2xl animate-pulse">
                                     {item.description}
                                 </p>
                             </div>

@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Header fonini bulanma qilish */
-.header-bg-blur {
-    /* position: relative; */
-    background-color: white;
-    backdrop-filter: blur(10px); /* Fonnni bulanma qilish */
-    z-index: 10;
-  }
-  
-  .header-bg-blur::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(207, 121, 121, 0.241); /* Fonnni shaffof qilish */
-    z-index: -1;
-  }
+.blur-effect {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.ant-btn .anticon {
+  font-size: 23px !important;
+  color: blue !important;
+}
+body {
+  /* background-image: url('./assets/imagesBanner/img1.jpg') !important; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+}
+.ant-table-thead > tr > th {
+  background-color: #6e54d8 !important; /* Sizning rang tanlovingiz */
+  color: white !important; /* Matn rangi */
+  text-align: start !important; 
+}
+
+
   
   
