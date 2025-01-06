@@ -22,7 +22,7 @@ const News = () => {
 
   return (
     <div className='text-center font-afacad'>
-      <h1 className='text-3xl font-bold my-6 text-[#2b82fc] font-afacad'>Yangiliklar</h1>
+      <h1 className='text-3xl font-bold my-6 text-[#6e54d8] font-afacad'>Yangiliklar</h1>
       <div className='w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {loading ? (
           [...Array(3)].map((_, index) => (

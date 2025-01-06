@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { Layout, Menu, Drawer, Button } from 'antd'
-import { MenuOutlined } from '@ant-design/icons';
-import Banner from '../components/Banner';
-import logo from "../../src/assets/icons/logo.png"
-import img1 from "../../src/assets/imagesBanner/img1.jpg"
-import Footer from './Footer';
-import LanguageSwitcher from '../components/languageSwitch';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Layout, Menu, Drawer, Button } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+import Banner from "../components/Banner";
+import logo from "../../src/assets/icons/logo.png";
+import img1 from "../../src/assets/imagesBanner/img1.jpg";
+import telegram from "../../src/assets/icons/telegram.svg";
+import Footer from "./Footer";
+import LanguageSwitcher from "../components/languageSwitch";
+import { useTranslation } from "react-i18next";
+import { CgMenuRightAlt } from "react-icons/cg";
 
-const { Header, Content } = Layout
+const { Header, Content } = Layout;
 
 const MainLayout = ({ children }) => {
   const { t } = useTranslation();
@@ -33,17 +35,17 @@ const MainLayout = ({ children }) => {
   };
 
   const slides = {
-    '/': [
+    "/": [
       {
         image: img1,
         title: "Bosh Sahifa 1",
         description: "Bosh sahifa haqida birinchi ma'lumot.",
       },
-
     ],
-    '/about': [
+    "/about": [
       {
-        image: "https://img.freepik.com/free-photo/black-friday-sales-elements-assortment-with-copy-space_23-2148665617.jpg",
+        image:
+          "https://img.freepik.com/free-photo/black-friday-sales-elements-assortment-with-copy-space_23-2148665617.jpg",
         title: "Maktab Haqida 1",
         description: "Maktab haqida birinchi ma'lumot.",
       },
@@ -58,9 +60,10 @@ const MainLayout = ({ children }) => {
         description: "Maktab haqida uchinchi ma'lumot.",
       },
     ],
-    '/leader': [
+    "/leader": [
       {
-        image: "https://img.freepik.com/free-photo/black-friday-sales-elements-assortment-with-copy-space_23-2148665617.jpg",
+        image:
+          "https://img.freepik.com/free-photo/black-friday-sales-elements-assortment-with-copy-space_23-2148665617.jpg",
         title: "Raxbar1",
         description: "Maktab haqida birinchi ma'lumot.",
       },
@@ -75,9 +78,10 @@ const MainLayout = ({ children }) => {
         description: "Maktab haqida uchinchi ma'lumot.",
       },
     ],
-    '/teachers': [
+    "/teachers": [
       {
-        image: "https://t4.ftcdn.net/jpg/06/77/02/57/360_F_677025783_psFcLAG8Pp5v4AHSM0JCk2rQttEzXT7N.jpg",
+        image:
+          "https://t4.ftcdn.net/jpg/06/77/02/57/360_F_677025783_psFcLAG8Pp5v4AHSM0JCk2rQttEzXT7N.jpg",
         title: "O'qituvchilar 1",
         description: "O'qituvchilar haqida birinchi ma'lumot.",
       },
@@ -92,7 +96,7 @@ const MainLayout = ({ children }) => {
         description: "O'qituvchilar haqida uchinchi ma'lumot.",
       },
     ],
-    '/news': [
+    "/news": [
       {
         image: "https://via.placeholder.com/800x400?text=Yangiliklar+1",
         title: "Yangiliklar 1",
@@ -109,7 +113,7 @@ const MainLayout = ({ children }) => {
         description: "Yangiliklar haqida uchinchi ma'lumot.",
       },
     ],
-    '/contact': [
+    "/contact": [
       {
         image: "https://via.placeholder.com/800x400?text=Aloqa+1",
         title: "Aloqa 1",
@@ -126,7 +130,7 @@ const MainLayout = ({ children }) => {
         description: "Aloqa haqida uchinchi ma'lumot.",
       },
     ],
-    '/qabul': [
+    "/qabul": [
       {
         image: "https://via.placeholder.com/800x400?text=Qabul+1",
         title: "Qabul 1",
@@ -143,7 +147,7 @@ const MainLayout = ({ children }) => {
         description: "Qabul haqida uchinchi ma'lumot.",
       },
     ],
-    '/galereya': [
+    "/galereya": [
       {
         image: "https://via.placeholder.com/800x400?text=Qabul+1",
         title: "galereya 1",
@@ -162,42 +166,103 @@ const MainLayout = ({ children }) => {
     ],
   };
 
-
   const handleMenuClick = (page) => {
     const index = {
-      '/': 0,
-      '/about': 1,
-      '/leader': 2,
-      '/teachers': 3,
-      '/news': 4,
-      '/contact': 5,
-      '/qabul': 6,
-      '/galereya': 7,
+      "/": 0,
+      "/about": 1,
+      "/leader": 2,
+      "/teachers": 3,
+      "/news": 4,
+      "/contact": 5,
+      "/qabul": 6,
+      "/galereya": 7,
     }[page];
     setCurrentSlide(slides[index] || null);
   };
 
   const menuItems = [
-    { key: '/', label: <Link to="/" onClick={() => handleMenuClick('/')}>{t("home")}</Link> },
-    { key: '/about', label: <Link to="/about" onClick={() => handleMenuClick('/about')}>{t("about")}</Link> },
-    { key: '/leader', label: <Link to="/leader" onClick={() => handleMenuClick('/leader')}>{t("leader")}</Link> },
-    { key: '/teachers', label: <Link to="/teachers" onClick={() => handleMenuClick('/teachers')}>{t("teachers")}</Link> },
-    { key: '/news', label: <Link to="/news" onClick={() => handleMenuClick('/news')}>{t("news")}</Link> },
-    { key: '/contact', label: <Link to="/contact" onClick={() => handleMenuClick('/contact')}>{t("contact")}</Link> },
-    { key: '/qabul', label: <Link to="/qabul" onClick={() => handleMenuClick('/qabul')}>{t("acceptance")}</Link> },
-    { key: '/galereya', label: <Link to="/galereya" onClick={() => handleMenuClick('/galereya')}>{t("gallery")}</Link> },
-  ]
+    {
+      key: "/",
+      label: (
+        <Link to="/" onClick={() => handleMenuClick("/")}>
+          {t("home")}
+        </Link>
+      ),
+    },
+    {
+      key: "/about",
+      label: (
+        <Link to="/about" onClick={() => handleMenuClick("/about")}>
+          {t("about")}
+        </Link>
+      ),
+    },
+    {
+      key: "/leader",
+      label: (
+        <Link to="/leader" onClick={() => handleMenuClick("/leader")}>
+          {t("leader")}
+        </Link>
+      ),
+    },
+    {
+      key: "/teachers",
+      label: (
+        <Link to="/teachers" onClick={() => handleMenuClick("/teachers")}>
+          {t("teachers")}
+        </Link>
+      ),
+    },
+    {
+      key: "/news",
+      label: (
+        <Link to="/news" onClick={() => handleMenuClick("/news")}>
+          {t("news")}
+        </Link>
+      ),
+    },
+    {
+      key: "/qabul",
+      label: (
+        <Link to="/qabul" onClick={() => handleMenuClick("/qabul")}>
+          {t("acceptance")}
+        </Link>
+      ),
+    },
+    {
+      key: "/galereya",
+      label: (
+        <Link to="/galereya" onClick={() => handleMenuClick("/galereya")}>
+          {t("gallery")}
+        </Link>
+      ),
+    },
+    {
+      key: "/contact",
+      label: (
+        <Link to="/contact" onClick={() => handleMenuClick("/contact")}>
+          {t("contact")}
+        </Link>
+      ),
+    },
+  ];
 
   return (
     <Layout className="min-h-screen bg-[#f9f7f7] ">
-      <div
-        className="fixed w-full z-10 top-0 shadow h-auto py-2 sm:py-4 bg-misty-white backdrop-blur-md">
-        <div className="w-full max-w-[1440px] mx-auto px-10 flex items-center justify-between md:py-0">
-          <Link to="/" className="flex items-center justify-between w-[50%] sm:w-[50%] lg:w-[30%] gap-1">
-            <img className='w-[110px]' src={logo} alt="logo" />
-            <div className='flex flex-col'>
-              <span className="text-[16px] lg:text-[14px] text-blue-800 font-medium font-afacad">RESPUBLIKA IXTISOSLASHTIRILGAN</span>
-              <span className="text-[15px] sm:text-[20px] text-red-500 font-semibold font-afacad">DIZAYN MAKTABI</span>
+      <div className="fixed w-full z-10 top-0 shadow h-auto py-2 sm:py-4 bg-misty-white backdrop-blur-md">
+        <div className="w-full max-w-[1840px] mx-auto px-10 flex items-center justify-between md:py-0">
+          <Link
+            to="/"
+            className="flex items-center justify-between w-[50%] sm:w-[50%] lg:w-[30%] xl:w-[28%] 2xl:w-[25%] gap-1"
+          >
+            <img className="w-[110px]" src={logo} alt="logo" />
+            <div className="flex flex-col">
+              <span className="text-[14px] lg:text-[14px] text-blue-800 font-medium font-afacad">
+                RESPUBLIKA IXTISOSLASHTIRILGAN
+              </span>
+              <span className="text-[14px] sm:text-[20px] text-red-500 font-semibold font-afacad">
+                DIZAYN MAKTABI
+              </span>
             </div>
           </Link>
           <div className="hidden w-full lg:flex justify-center">
@@ -211,20 +276,35 @@ const MainLayout = ({ children }) => {
                   fontSize: "16px",
                   color: "#32CD32",
                   backgroundColor: "transparent",
+                  border: "none",
                 }}
               />
             </div>
           </div>
-          <div className='hidden lg:flex'>
+          <div className="hidden lg:flex">
             <LanguageSwitcher />
           </div>
-          <Button className="lg:hidden bg-transparent" style={{ fontSize: '44px' }} onClick={showDrawer} icon={<MenuOutlined />} />
+          <Button
+            className="lg:hidden bg-transparent border-none hover:bg-transparent"
+            style={{
+              fontSize: "44px",
+              backgroundColor: "transparent",
+              hover: { backgroundColor: "transparent" }, // Shunchaki eslatma
+            }}
+            onClick={showDrawer}
+            icon={<CgMenuRightAlt className="bg-transparent" />}
+          />
         </div>
       </div>
       <Drawer
         title={
           <div className="flex justify-start items-start text-xl font-afacad text-[#2b82fc]">
-            Menu
+            <Link
+              to="/"
+              className="flex items-center justify-between w-[50%] sm:w-[50%] lg:w-[30%] gap-1"
+            >
+              <img className="w-[110px]" src={logo} alt="logo" />
+            </Link>
           </div>
         }
         width={300}
@@ -234,30 +314,32 @@ const MainLayout = ({ children }) => {
       >
         <Menu
           mode="inline"
-          style={{ width: '100%', fontSize: "17px", color: "#32CD32" }}
+          style={{ width: "100%", fontSize: "17px", color: "#32CD32" }}
           className="font-afacad"
-          items={menuItems.map(item => ({
-            ...item, label: <Link to={item.key}
-              onClick={onClose}>{item.label}</Link>
+          items={menuItems.map((item) => ({
+            ...item,
+            label: (
+              <Link to={item.key} onClick={onClose}>
+                {item.label}
+              </Link>
+            ),
           }))}
         />
-        <div className='ml-6'>
+        <div className="ml-6 flex flex-col items-start justify-between">
           <LanguageSwitcher />
         </div>
       </Drawer>
 
-      {showBanner && currentSlide && <Banner slide={currentSlide} />}
+      {currentSlide && <Banner slide={currentSlide} />}
       <Content className="flex justify-center items-center h-auto my-8 md:my-8">
-        <div className="w-full p-4">
-          {children}
-        </div>
+        <div className="w-full p-4">{children}</div>
       </Content>
       {/* <Footer className="text-center bg-[#32CD32]">
         <p> {new Date().getUTCFullYear()} Maktab Nomi. Barcha huquqlar himoyalangan.</p>
       </Footer> */}
       <Footer />
     </Layout>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

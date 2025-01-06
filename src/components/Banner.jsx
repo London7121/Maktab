@@ -35,7 +35,7 @@ const Banner = ({ slide }) => {
                 {/* <div className="swiper-button-prev-custom" style={{ color: '#32CD32', position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)' }}>Prev</div> */}
                 {slide.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative mx-auto max-w-[1440px] w-full h-[300px] md:h-screen">
+                        <div className="relative mx-auto  w-full h-[300px] md:h-screen">
                             <div
                                 className="absolute inset-0 bg-cover bg-center filter blur-s brightness-50"
                                 style={{ backgroundImage: `url(${item.image})` }}

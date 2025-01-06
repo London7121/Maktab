@@ -31,12 +31,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="text-center w-[90%] mx-auto">
-      <h1 className="text-3xl font-bold my-6 text-[#2b82fc]">Aloqa</h1>
-      <div className="max-w-[1380px] mx-auto bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+    <div className="text-center w-[100%] mx-auto">
+      <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">Aloqa</h1>
+      <div className="max-w-[14400px] mx-auto bg-white p-8 rounded-lg shadow-md  hover:shadow-lg">
         <Form
           onFinish={handleSubmit}
-          className="flex flex-col md:flex-row items-start justify-between gap-4"
+          className="flex flex-col md:flex-row md:items-center md:gap-3 items-start justify-between gap-4"
           // layout="vertical"
           style={{ width: '100%' }}
           validateTrigger={['onBlur', 'onChange']}
@@ -45,16 +45,17 @@ const Contact = () => {
             label={<span className="font-semibold text-lg">Ism</span>}
             name="name"
             rules={[{ required: true, message: 'Ismni kiriting!', whitespace: true },]}
+            style={{ width: '100%'}}
           >
             <Input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Ismingizni kiriting"
+              placeholder="John"
               style={{
                 borderRadius: '8px',
                 height: '40px',
                 width: '100%',
-                borderColor: '#2b82fc',
+                borderColor: '#6e54d8',
               }}
             />
           </Form.Item>
@@ -62,16 +63,17 @@ const Contact = () => {
             label={<span className="font-semibold text-lg">Familiya</span>}
             name="surname"
             rules={[{ required: true, message: 'Familiya kiriting!' }]}
+            style={{ width: '100%'}}
           >
             <Input
               value={surname}
               onChange={(e) => setSurname(e.target.value)}
-              placeholder="Familiyangizni kiriting"
+              placeholder="Smith"
               style={{
                 borderRadius: '8px',
                 height: '40px',
                 width: '100%',
-                borderColor: '#2b82fc',
+                borderColor: '#6e54d8',
               }}
             />
           </Form.Item>
@@ -79,16 +81,17 @@ const Contact = () => {
             label={<span className="font-semibold text-lg">Telefon</span>}
             name="phone"
             rules={[{ required: true, message: 'Telefon raqamingizni kiriting!' }]}
+            style={{ width: '100%'}}
           >
             <Input
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Telefon raqamingizni kiriting"
+              placeholder="+998991234567"
               style={{
                 borderRadius: '8px',
                 height: '40px',
                 width: '100%',
-                borderColor: '#2b82fc',
+                borderColor: '#6e54d8',
               }}
             />
           </Form.Item>
@@ -101,7 +104,7 @@ const Contact = () => {
                 borderRadius: '8px',
                 height: '45px',
                 width: '100%',
-                backgroundColor: '#2b82fc',
+                backgroundColor: '#6e54d8',
               }}
             >
               Yuborish

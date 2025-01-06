@@ -32,7 +32,7 @@ export default function Leaders() {
     return (
         <div>
             <div className='text-start font-afacad'>
-                <h1 className='text-3xl font-bold my-10 text-[#2b82fc] ml-8'>Raxbariyat</h1>
+                <h1 className='text-3xl font-bold my-10 text-[#6e54d8] ml-'>Raxbariyat</h1>
                 <div className='w-auto mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                     {loading ? (
                         [...Array(3)].map((_, index) => (

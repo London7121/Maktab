@@ -19,7 +19,7 @@ const Teachers = () => {
 
   return (
     <div className='text-center w-[95%] mx-auto font-afacad'>
-      <h1 className='text-3xl font-bold my-6 text-[#2b82fc]'>O'qituvchilar</h1>
+      <h1 className='text-3xl font-bold my-6 text-[#6e54d8]'>O'qituvchilar</h1>
       <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4'>
         {loading ? (
           [...Array(4)].map((_, index) => (

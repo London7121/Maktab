@@ -3,7 +3,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const MoreDescription = ({ description }) => {
     const [isExpanded, setIsExpanded] = useState(false);
-    const wordsLimit = 60;
+    const wordsLimit = 70;
 
     const toggleDescription = () => {
         setIsExpanded(!isExpanded);
@@ -25,7 +25,7 @@ const MoreDescription = ({ description }) => {
                     className='flex items-center text-blue-500 mt-2'
                 >
                     {isExpanded ? 'Yashirish' : "Batafsil o'qish"}
-                    {isExpanded ? <FaChevronUp className='ml-2' /> : <FaChevronDown className='ml-2' />}
+                    {isExpanded ? <FaChevronUp className='ml-1' style={{fontSize:"14px"}}/> : <FaChevronDown className='ml-1' style={{fontSize:"14px"}}/>}
                 </button>
             )}
         </div>

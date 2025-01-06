@@ -17,6 +17,11 @@ body {
   background-attachment: fixed !important;
   background-position: center !important;
 }
+.ant-table-thead > tr > th {
+  background-color: #6e54d8 !important; /* Sizning rang tanlovingiz */
+  color: white !important; /* Matn rangi */
+  text-align: start !important; 
+}
 
 
   

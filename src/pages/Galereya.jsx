@@ -31,7 +31,7 @@ const Galereya = () => {
     <div className='font-afacad'>
       {/* Photos Section */}
       <div className="text-center ">
-        <h1 className="text-3xl font-bold my-6 text-[#2b82fc]">Galereya</h1>
+        <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">Galereya</h1>
         {/* <Gallery photos={photos} /> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
           {photos.map((photo, index) => {
@@ -72,7 +72,7 @@ const Galereya = () => {
 
       {/* Videos Section */}
       <div className="text-center mt-8">
-        <h1 className="text-3xl font-bold my-6 text-[#2b82fc]">Videolar</h1>
+        <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">Videolar</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {videos.map((video, index) => (
             <Card key={index} bordered={false} style={{ width: '100%' }}>
