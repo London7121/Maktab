@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blur-effect {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.ant-btn .anticon {
+  font-size: 23px !important;
+  color: blue !important;
+}
+body {
+  /* background-image: url('./assets/imagesBanner/img1.jpg') !important; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+}
+
+
+  
+  
