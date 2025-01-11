@@ -48,26 +48,26 @@ export default function LeaderAndChief() {
     const content = {
         1: <Director />,
         2: <Manaviy />,
-        3: <ReadDirectors/>,
+        3: <ReadDirectors />,
         4: <KasbiyDirec />,
         5: <Chiefs />,
     };
 
     return (
-        <div>
-            <Segmented
-                block
-                mode="vertical"
-                options={segments}
-                value={activeKey}
-                onChange={setActiveKey}
-                style={{
-                    flex: '0 0 auto',
-                    minWidth: '200px',
-                    maxWidth: '100%',
-                }}
-            />
-            <div className="border p-3 rounded-lg mt-4">
+        <div className='w-[98%] mx-auto max-w-[1380px] gap-2'>
+            <div className='w-[350px] sm:w-[760px] lg:w-[1000px] xl:w-full overflow-x-auto scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-gray-200'>
+                <Segmented
+                    // block={true}
+                    // vertical={true}
+                    // size='small'
+                    options={segments}
+                    value={activeKey}
+                    onChange={setActiveKey}
+                    style={{ padding: "8px", }}
+                    className="border shadow-xl"
+                />
+            </div>
+            <div className="border p-3 rounded-lg mt-4 shadow-lg">
                 {content[activeKey]}
             </div>
         </div>

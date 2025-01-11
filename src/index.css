@@ -31,6 +31,7 @@ body {
   font-size: 18px !important;
   align-items: center !important;
   justify-content: center !important;
+  /* background-color: rgba(14, 75, 50, 0.377); */
 }
 .ant-segmented-group{
   display: flex !important;

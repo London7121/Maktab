@@ -22,15 +22,15 @@ const About = () => {
     }, 1000);
   }, []);
 
-  if (loading) {
-    return (
-      <div className="text-center flex flex-col gap-4 items-center mx-auto md:flex-row">
-        <Skeleton.Input active paragraph={{ rows: 1 }} />
-        <Skeleton.Input active paragraph={{ rows: 3 }} />
-        <Skeleton.Input active paragraph={{ rows: 3 }} />
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="text-center flex flex-col gap-4 items-center mx-auto md:flex-row">
+  //       <Skeleton.Input active paragraph={{ rows: 1 }} />
+  //       <Skeleton.Input active paragraph={{ rows: 3 }} />
+  //       <Skeleton.Input active paragraph={{ rows: 3 }} />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="text-center sm:my-10 border-b pb-4 bg-[#f9f7f7] font-afacad">

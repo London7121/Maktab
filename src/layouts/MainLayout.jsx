@@ -334,9 +334,6 @@ const MainLayout = ({ children }) => {
       <Content className="flex justify-center items-center h-auto my-8 md:my-8">
         <div className="w-full p-4">{children}</div>
       </Content>
-      {/* <Footer className="text-center bg-[#32CD32]">
-        <p> {new Date().getUTCFullYear()} Maktab Nomi. Barcha huquqlar himoyalangan.</p>
-      </Footer> */}
       <Footer />
     </Layout>
   );
