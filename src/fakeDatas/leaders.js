@@ -9,36 +9,38 @@ import nargiza from '../assets/leaders/nargiza.png'
 import ravshan from '../assets/leaders/ravshan.png'
 
 const leaders = {
-    leaders: [
+    director:
+    {
+        id: 1,
+        title: "Respublika ixtisoslashtirilgan dizayn maktabi direktori",
+        description: "Salahiddinov Ma'suddin Sadriddinovich",
+        image: masuddin,
+        link: '/leaders/1',
+    },
+    kasbiy_talim: 
         {
             id: 1,
-            title: "Respublika ixtisoslashtirilgan dizayn maktabi direktori",
-            description: "Salahiddinov Ma'suddin Sadriddinovich",
-            image: masuddin,
+            title: "Respublika ixtisoslashtirilgan dizayn maktabi kasbiy ta’lim bo’yicha direktor o’rinbosari",
+            description: "Jamoldinov Baxtiyor Shaxobiddinovich",
+            image: baxtiyor,
             link: '/leaders/1',
         },
+    manaviy: 
         {
-            id: 2,
+            id: 1,
+            title: "Respublika ixtisoslashtirilgan dizayn maktabi ma'naviy va marifiy bo’yicha direktor o’rinbosari",
+            description: "Nigmatov Jaxongir Muhammadaliyevich",
+            image: jaxongir,
+            link: '/leaders/1',
+        },
+    leaders:
+        {
+            id: 1,
             title: "Respublika ixtisoslashtirilgan dizayn maktabi o’quv ishlari bo’yicha direktor o’rinbosari",
             description: "Shakarimov Uchqun Shaislamovich",
             image: uchqun,
             link: '/leaders/1',
         },
-        {
-            id: 3,
-            title: "Respublika ixtisoslashtirilgan dizayn maktabi kasbiy ta’lim bo’yicha direktor o’rinbosari",
-            description: "jamoldinov Baxtiyor Shaxobiddinovich",
-            image: baxtiyor,
-            link: '/leaders/1',
-        },
-        {
-            id: 4,
-            title: "Respublika ixtisoslashtirilgan dizayn maktabi kasbiy ta’lim bo’yicha direktor o’rinbosari",
-            description: "Nigmatov Jaxongir Muhammadaliyevich",
-            image: jaxongir,
-            link: '/leaders/1',
-        },
-    ],
     addel_kadrs: [
         {
             id: 1,
@@ -76,7 +78,6 @@ const leaders = {
             link: '/leaders/1',
         },
     ]
-}
-    ;
+};
 
 export default leaders;

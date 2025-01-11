@@ -6,7 +6,7 @@ import { ScrollToTopBtn } from "./components/ScrollTopBtn";
 import SingleNews from "./pages/SingleNews";
 import "./App.css";
 import Leaders from "./pages/Leaders";
-import SplashCursor from "./components/animatedCursor";
+// import SplashCursor from "./components/animatedCursor";
 
 // Use React.lazy to load components lazily
 const Home = lazy(() => import("./pages/Home"));
@@ -23,7 +23,7 @@ function App() {
       <MainLayout>
         <div className="flex justify-center items-center h-full">
           <Suspense fallback={<Loading />}>
-            <SplashCursor />
+            {/* <SplashCursor /> */}
             <ScrollToTopBtn />
             <Routes>
               <Route path="/" element={<Home />} />
