@@ -1,7 +1,4 @@
-
-import { SlLocationPin } from "react-icons/sl";
 import logo from "../assets/icons/logo.png";
-import { MdOutlineMail, MdOutlinePhoneInTalk } from "react-icons/md";
 import { RiTwitterXFill } from "react-icons/ri";
 import { LuInstagram } from "react-icons/lu";
 import { GrYoutube } from "react-icons/gr";
