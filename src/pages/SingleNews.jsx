@@ -10,7 +10,7 @@ const SingleNews = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            const foundNews = newsItems.find((item) => item.id === parseInt(id));
+            const foundNews = newsItems.uz.find((item) => item.id === parseInt(id));
             setNews(foundNews);
             setLoading(false); // Yuklanish tugadi
         }, 1000); // 1 soniya vaqt yuklanish uchun
@@ -31,7 +31,7 @@ const SingleNews = () => {
     }
 
     return (
-        <div className='w-[85%] max-w-[1380px] mx-auto p-4 mt-14 h-screen'>
+        <div className=' max-w-[1380px] mx-auto p-4 mt-14 h-auto'>
             <div className='flex flex-col lg:flex-row items-start gap-6'>
                 {/* Chap tarafdagi rasm */}
                 <div className='w-full lg:w-1/2'>

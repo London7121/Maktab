@@ -1,7 +1,8 @@
 import logo from "../assets/icons/logo.png";
-import { RiTwitterXFill } from "react-icons/ri";
-import { LuInstagram } from "react-icons/lu";
-import { GrYoutube } from "react-icons/gr";
+import instagram from "../assets/icons/instagram.svg";
+import telegram from "../assets/icons/telegram.svg";
+import twitter from "../assets/icons/twitter.svg";
+import youtube from "../assets/icons/youtube.svg";
 export default function Footer() {
     const footerDescriptions = {
         title: "Aloqa uchun",
@@ -14,27 +15,28 @@ export default function Footer() {
     };
     const footerDescriptions1 = {
         title: "Boshqa sahifalar",
-        descriptions: [
-            "Maxfiylik siyosati",
-            "Foydalanish shartlari & qoidalari",
-            "404",
-        ],
+        descriptions: ["Maxfiylik siyosati", "Foydalanish shartlari & qoidalari"],
     };
     const footerBottomData = [
         {
-            icon: <RiTwitterXFill />,
+            icon: twitter,
             descriptions: "Twitter",
-            linkAddress: "https://twitter.com",
+            linkAddress: "https://www.facebook.com/dizayn.maktabi?mibextid=LQQJ4d",
         },
         {
-            icon: <LuInstagram />,
+            icon: instagram,
             descriptions: "Instagram",
-            linkAddress: "https://instagram.com",
+            linkAddress: "https://instagram.com/art.dizayn_maktabi?igshid=YmMyMTA2M2Y=",
         },
         {
-            icon: <GrYoutube />,
+            icon: youtube,
             descriptions: "YouTube",
-            linkAddress: "https://youtube.com",
+            linkAddress: "https://youtube.com/@user-qn6sy3qv8t",
+        },
+        {
+            icon: telegram,
+            descriptions: "Telegram",
+            linkAddress: "https://t.me/+sA_MICEbXUlmN2Zi",
         },
     ];
 
@@ -46,12 +48,14 @@ export default function Footer() {
             }}
             className="border w-full  mx-auto h-auto p-8 sm:p-6 flex flex-col gap-5 items-center justify-between font-afacad"
         >
-            <div>
+            <div className="w-full px-2">
                 <div className="footer-top w-full flex flex-col md:flex-row sm:items-center justify-between gap-10">
-                    <div className="flex items-center gap-4 juctify-between sm:w-[40%]">
+                    <div className="flex items-center gap-4 juctify-between w-[80%] sm:w-[40%] md:w-[21%]">
                         <img className="w-[90px]" src={logo} alt="logo" />
                         <p className="text-[#4D525F] font-semibold">
-                            <span className="text-[#2b82fc]">RIDM– RESPUBLIKA IXTISOSLASHTIRILGAN</span>
+                            <span className="text-[#2b82fc]">
+                                RIDM– RESPUBLIKA IXTISOSLASHTIRILGAN
+                            </span>
                             <span className="text-red-500"> DIZAYN MAKTABI</span>
                         </p>
                     </div>
@@ -84,15 +88,16 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-bottom border-t-2 border-[#E7E7E8] w-full pt-4 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <div className="w-full sm:w-[30%]">
+                    <div className="w-full sm:w-[45%] md:w-[30%]">
                         <ul className="flex items-center justify-between">
                             {footerBottomData.map((data, index) => (
                                 <li key={index}>
                                     <a
-                                        className="flex items-center justify-between gap-2"
+                                        className="flex items-center justify-between gap-1"
                                         href={data.linkAddress}
+                                        rel="noopener noreferrer"
                                     >
-                                        {data.icon}
+                                        <img src={data.icon} className="w-5" alt="instagram" />
                                         {data.descriptions}
                                     </a>
                                 </li>
@@ -100,7 +105,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="text-[#4D525F]">
-                        2024 © Tax Pay. Barcha huquqlar himoyalangan.
+                        2025 © RIDM. Barcha huquqlar himoyalangan.
                     </div>
                 </div>
             </div>

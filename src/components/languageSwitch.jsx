@@ -26,11 +26,11 @@ const LanguageSwitcher = () => {
     const getLangIcon = () => {
         switch (selectedLang) {
             case 'uz':
-                return <span role="img" aria-label="uz" className='text-[15px] md:text-[20px] text-green-400'>🇺🇿</span>;
+                return <span role="img" aria-label="uz" className='text-[15px] md:text-[20px] text-green-600'>UZ</span>;
             case 'ru':
-                return <span role="img" aria-label="ru" className='text-[15px] md:text-[20px] text-blue-400'>🇷🇺</span>;
+                return <span role="img" aria-label="ru" className='text-[15px] md:text-[20px] text-blue-600'>RU</span>;
             default:
-                return <span role="img" aria-label="uz" className='text-[15px] md:text-[20px] text-green-400'>🇺🇿</span>;
+                return <span role="img" aria-label="uz" className='text-[15px] md:text-[20px] text-green-600'>UZ</span>;
         }
     };
 

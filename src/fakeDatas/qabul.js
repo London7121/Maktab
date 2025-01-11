@@ -4,7 +4,7 @@ export const tableColumns = [
         title: 'Sana',
         dataIndex: 'date',
         key: 'date',
-        responsive: ['lg'],
+        // responsive: ['lg'],
     },
     {
         title: 'Vaqt',
