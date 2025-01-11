@@ -11,7 +11,6 @@ export default function Chiefs() {
     };
     useEffect(() => {
         Aos.init();
-
         setTimeout(() => {
             setLoading(false);
         }, 1000);
@@ -33,7 +32,7 @@ export default function Chiefs() {
                             <div
                                 key={index}
                                 className='border rounded-lg shadow-md flex flex-col items-center gap-2'
-                                data-aos={index % 2 === 0 ?  "fade-right": "fade-up"}
+                                // data-aos={index % 2 === 0 ?  "fade-right": "fade-up"}
                             >
                                 <Image style={{ objectFit: 'cover' }} width={"100%"} height={200} src={news.image} alt={news.title} className='object-cover rounded' />
                                 <div className='flex flex-col items-start py-2'>
