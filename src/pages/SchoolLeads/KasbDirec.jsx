@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Image, Skeleton } from 'antd';
 import directors from '../../fakeDatas/leaders';
+import { useTranslation } from 'react-i18next';
 
 const KasbDirec = () => {
     const [loading, setLoading] = useState(false);
+    const { t, i18n } = useTranslation(); // useTranslation hook'ini chaqiramiz
+
     // useEffect(() => {
     //     setTimeout(() => {
     //         setLoading(false);
@@ -24,7 +27,7 @@ const KasbDirec = () => {
                     ) : (
                         <Image
                             src={directors?.kasbiy_talim.image}
-                            alt={directors?.kasbiy_talim.title}
+                            alt={directors?.kasbiy_talim.title[i18n.language]}
                             width="100%"
                             height="auto"
                             className='rounded-md'
@@ -35,10 +38,10 @@ const KasbDirec = () => {
                 {/* O'ng tarafdagi ma'lumotlar */}
                 <div className='w-full lg:w-1/2'>
                     <h1 className='text-md text-start sm:text-xl font-bold text-[#2b82fc] lg:text-left'>
-                        {directors?.kasbiy_talim.title}
+                        {directors?.kasbiy_talim.title[i18n.language]}
                     </h1>
                     <p className='text-base text-start sm:text-lg mt-4'>
-                        {directors?.kasbiy_talim.description}
+                        {directors?.kasbiy_talim.description[i18n.language]}
                     </p>
                 </div>
             </div>

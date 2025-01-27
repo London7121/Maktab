@@ -7,7 +7,7 @@ import SingleNews from "./pages/SingleNews";
 import "./App.css";
 // import Leaders from "./pages/Leaders";
 import LeaderAndChief from "./pages/LeaderAndChief";
-// import SplashCursor from "./components/animatedCursor";
+import SplashCursor from "./components/animatedCursor";
 
 // Use React.lazy to load components lazily
 const Home = lazy(() => import("./pages/Home"));

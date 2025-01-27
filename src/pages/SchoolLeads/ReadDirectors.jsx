@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Image, Skeleton } from 'antd';
 import directors from '../../fakeDatas/leaders';
+import { useTranslation } from 'react-i18next';
 
 const Director = () => {
     const [loading, setLoading] = useState(false);
+    const { t, i18n } = useTranslation(); // useTranslation hook'ini chaqiramiz
 
     // useEffect(() => {
     //     setTimeout(() => {
@@ -25,7 +27,7 @@ const Director = () => {
                     ) : (
                         <Image
                             src={directors?.leaders.image}
-                            alt={directors?.leaders.title}
+                            alt={directors?.leaders.title[i18n.language]}
                             width="100%"
                             height="auto"
                             className='rounded-md'
@@ -36,10 +38,10 @@ const Director = () => {
                 {/* O'ng tarafdagi ma'lumotlar */}
                 <div className='w-full lg:w-1/2'>
                     <h1 className='text-md text-start sm:text-xl font-bold text-[#2b82fc] lg:text-left'>
-                        {directors?.leaders.title}
+                        {directors?.leaders.title[i18n.language]}
                     </h1>
                     <p className='text-base text-start sm:text-lg mt-4'>
-                        {directors?.leaders.description}
+                        {directors?.leaders.description[i18n.language]}
                     </p>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, notification } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -8,7 +9,7 @@ const Contact = () => {
   const [phone, setPhone] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-
+  const { t, i18n } = useTranslation();
   const handleSubmit = () => {
     setLoading(true);
     setTimeout(() => {
@@ -31,7 +32,7 @@ const Contact = () => {
 
   return (
     <div className="text-center w-[100%] mx-auto">
-      <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">Aloqa</h1>
+      <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">{t("contact")}</h1>
       <div className="max-w-[14400px] mx-auto bg-white p-8 rounded-lg shadow-md  hover:shadow-lg">
         <Form
           onFinish={handleSubmit}
@@ -41,9 +42,9 @@ const Contact = () => {
           validateTrigger={['onBlur', 'onChange']}
         >
           <Form.Item
-            label={<span className="font-semibold text-lg">Ism</span>}
+            label={<span className="font-semibold text-lg">{t("ism")}</span>}
             name="name"
-            rules={[{ required: true, message: 'Ismni kiriting!', whitespace: true },]}
+            rules={[{ required: true, message: `${t("ismKirt")}`, whitespace: true },]}
             style={{ width: '100%'}}
           >
             <Input
@@ -59,9 +60,9 @@ const Contact = () => {
             />
           </Form.Item>
           <Form.Item
-            label={<span className="font-semibold text-lg">Familiya</span>}
+            label={<span className="font-semibold text-lg">{t("familiya")}</span>}
             name="surname"
-            rules={[{ required: true, message: 'Familiya kiriting!' }]}
+            rules={[{ required: true, message:  `${t("famKirt")}` }]}
             style={{ width: '100%'}}
           >
             <Input
@@ -77,9 +78,9 @@ const Contact = () => {
             />
           </Form.Item>
           <Form.Item
-            label={<span className="font-semibold text-lg">Telefon</span>}
+            label={<span className="font-semibold text-lg">{t("telefon")}</span>}
             name="phone"
-            rules={[{ required: true, message: 'Telefon raqamingizni kiriting!' }]}
+            rules={[{ required: true, message:  `${t("telKirt")}` }]}
             style={{ width: '100%'}}
           >
             <Input
@@ -106,7 +107,7 @@ const Contact = () => {
                 backgroundColor: '#6e54d8',
               }}
             >
-              Yuborish
+              {t("yuborish")}
             </Button>
           </Form.Item>
         </Form>
