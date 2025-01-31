@@ -43,9 +43,9 @@ const News = () => {
 
               {/* Centered Link */}
               <div className="flex justify-center ml-[68%] md:ml-[72%] py-2">
-                <Link to={news.link} className='text-[#2b82fc] text-lg hover:text-[#2b82fc] animate-pulse'>
+                <Link to={news.link} className='text-[#2b82fc] text-md lg:text-lg hover:text-[#2b82fc] animate-pulse'>
                   {t("more")}
-                  <ArrowRightOutlined className="ml-2 animate-pulse" />
+                  <ArrowRightOutlined className="ml-1 animate-pulse" />
                 </Link>
               </div>
             </div>

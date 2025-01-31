@@ -50,7 +50,7 @@ const MainLayout = ({ children }) => {
         description: "Maktab haqida birinchi ma'lumot.",
       },
       {
-        image: "https://via.placeholder.com/800x400?text=Maktab+Haqida+2",
+        image: "https://ridm.uz/wp-content/uploads/2022/06/slider1-1.jpg",
         title: "Maktab Haqida 2",
         description: "Maktab haqida ikkinchi ma'lumot.",
       },
@@ -115,19 +115,19 @@ const MainLayout = ({ children }) => {
     ],
     "/contact": [
       {
-        image: "https://via.placeholder.com/800x400?text=Aloqa+1",
-        title: "Aloqa 1",
-        description: "Aloqa haqida birinchi ma'lumot.",
+        image: "https://ridm.uz/wp-content/uploads/2016/06/shutterstock_381527992.jpg",
+        title: "Birinchi Qadam",
+        description: "Samarali aloqa muvaffaqiyatga yo'l ochadi. Muloqotda samimiylik va e'tibor muhim.",
       },
       {
-        image: "https://via.placeholder.com/800x400?text=Aloqa+2",
-        title: "Aloqa 2",
-        description: "Aloqa haqida ikkinchi ma'lumot.",
+        image: "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_66433e25be4bd00d961a99fd_66434ea1be4bd00d962905f6/scale_1200",
+        title: "Yaqin Bog'liqlik",
+        description: "O'zaro tushunish va ishonch aloqa asosidir. Har bir suhbat imkoniyatdir.",
       },
       {
-        image: "https://via.placeholder.com/800x400?text=Aloqa+3",
-        title: "Aloqa 3",
-        description: "Aloqa haqida uchinchi ma'lumot.",
+        image: "http://www.gerberaprintsinc.com/storage/images/E8wtjptuVJFznxvBFdZzsOAynB1coByZXJgSxF7r.jpg",
+        title: "Yangi Cho'qqilar",
+        description: "Har bir so'z yangi imkoniyatlar eshigini ochadi. Suhbatingiz samimiy bo'lsin.",
       },
     ],
     "/qabul": [

@@ -24,7 +24,7 @@ const Banner = ({ slide }) => {
                 pagination={{
                     clickable: true,
                     renderBullet: (index, className) => {
-                        return `<span class="${className}" style="background-color: #32CD32; width: 12px; height: 12px;"></span>`;
+                        return `<span className="${className}" style="background-color: #32CD32; width: 12px; height: 12px;"></span>`;
                     },
                 }}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
