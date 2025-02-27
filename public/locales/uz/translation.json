@@ -42,5 +42,10 @@
     "zam5": "Kasbiy ta’lim bo’yicha",
     "zam6": "direktor o'rinbosari",
 
-    "zam7": "Bo'lim boshliqlar"
+    "zam7": "Bo'lim boshliqlar",
+
+    "arx":"Arxitektura bo'limi",
+    "dizayn":"Dizayn bo'limi",
+    "libos":"Liboslar bo'limi",
+    "tasvir":"Tasviriy va amaliy san'at bo'limi"
 }

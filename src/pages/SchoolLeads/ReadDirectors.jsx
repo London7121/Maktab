@@ -7,12 +7,6 @@ const Director = () => {
     const [loading, setLoading] = useState(false);
     const { t, i18n } = useTranslation(); // useTranslation hook'ini chaqiramiz
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoading(false);
-    //     }, 1000);
-    // }, []);
-
     if (!directors) {
         return <h2 className="text-center text-red-500">Ma'lumot topilmadi!</h2>;
     }
