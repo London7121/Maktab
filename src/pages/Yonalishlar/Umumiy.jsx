@@ -37,7 +37,7 @@ export default function LeaderAndChief() {
             value: '4',
         },
     ];
-//fff
+//fffff
     const content = {
         1: <Arxitektura />,
         2: <Dizayn />,
