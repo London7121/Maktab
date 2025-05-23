@@ -23,7 +23,7 @@ function App() {
       <MainLayout>
         <div className="flex justify-center items-center h-full">
           <Suspense fallback={<Loading />}>
-            <SplashCursor />
+            {/* <SplashCursor /> */}
             <ScrollToTopBtn />
             <Routes>
               <Route path="/" element={<Home />} />
