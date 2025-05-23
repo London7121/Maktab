@@ -24,7 +24,7 @@ const About = () => {
       <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">
         {t("about")}
       </h1>
-      <div className="w-full h-auto p-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 items-center justify-between gap-4">
+      <div className="w-auto sm:w-full h-auto p-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 items-center justify-between gap-4">
         <div className="flex flex-col items-center bg-red-500 hover:bg-red-600 hover:shadow-red-600 border-red-200 rounded-md w-auto h-auto p-2 shadow-sm duration-150 hover:scale-105 hover:duration-150 hover:shadow-lg">
           <CountUp
             from={aboutData.studentsCount - 209}
@@ -32,7 +32,7 @@ const About = () => {
             separator=","
             direction="up"
             duration={1}
-            className="count-up-text text-[40px] font-afacad font-medium text-white"
+            className="count-up-text text-[30px] sm:text-[40px] font-afacad font-medium text-white"
           />
           <p className="text-xl sm:text-2xl text-gray-100 mx-4 text-start">
             {t("students")}
@@ -45,7 +45,7 @@ const About = () => {
             separator=","
             direction="up"
             duration={1}
-            className="count-up-text text-[40px] font-afacad font-medium text-white"
+            className="count-up-text text-[30px] sm:text-[40px] font-afacad font-medium text-white"
           />
           <p className="text-xl sm:text-2xl text-gray-100 mx-4 text-start">
             {t("teacher")}
@@ -58,7 +58,7 @@ const About = () => {
             separator=","
             direction="up"
             duration={1}
-            className="count-up-text text-[40px] font-afacad font-medium text-white"
+            className="count-up-text text-[30px] sm:text-[40px] font-afacad font-medium text-white"
           />
           <p className="text-xl sm:text-2xl text-gray-100 mx-4 text-start">
             {t("class")}
@@ -71,7 +71,7 @@ const About = () => {
             separator=","
             direction="up"
             duration={1}
-            className="count-up-text text-[40px] font-afacad font-medium text-white"
+            className="count-up-text text-[30px] sm:text-[40px] font-afacad font-medium text-white"
           />
           <p className="text-xl sm:text-2xl text-gray-100 mx-4 text-start">
             {t("predmet")}

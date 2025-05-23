@@ -14,8 +14,8 @@ export default function LeaderAndChief() {
         { label: <div className='font-afacad'>{t("arx")}</div>, value: '1' },
         {
             label: (
-                <div className='font-afacad'>
-                    <p>{t("dizayn")}</p>
+                <div className='font-afacad px-2 py-1 sm:px-4 sm:py-2'>
+                    <span className='text-xs sm:text-sm md:text-base'>{t("arx")}</span>
                 </div>
             ),
             value: '2',
@@ -37,7 +37,7 @@ export default function LeaderAndChief() {
             value: '4',
         },
     ];
-//fffff
+
     const content = {
         1: <Arxitektura />,
         2: <Dizayn />,
@@ -46,14 +46,14 @@ export default function LeaderAndChief() {
     };
 
     return (
-        <div className='w-[100%] mx-auto gap-2 flex flex-col items-center justify-center'>
-            <div className='w-[300px] sm:w-[760px] lg:w-full overflow-x-auto scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-gray-200'>
+        <div className='w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='w-auto overflow-x-auto scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-gray-200'>
                 <Segmented
                     options={segments}
                     value={activeKey}
                     onChange={setActiveKey}
                     style={{ padding: "8px", }}
-                    className="border shadow-xl w-full"
+                    className="w-full"
                 />
             </div>
             <div className="border p-3 rounded-lg mt-4 shadow-lg">

@@ -57,13 +57,13 @@ export default function LeaderAndChief() {
 
     return (
         <div className='w-[100%] mx-auto max-w-[1480px] gap-2'>
-            <div className='w-[350px] sm:w-[760px] lg:w-[1200px] xl:w-full overflow-x-auto scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-gray-200'>
+            <div className='w-auto overflow-x-auto scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-gray-200'>
                 <Segmented
                     options={segments}
                     value={activeKey}
                     onChange={setActiveKey}
                     style={{ padding: "8px", }}
-                    className="border shadow-xl w-full"
+                    className="w-full"
                 />
             </div>
             <div className="border p-3 rounded-lg mt-4 shadow-lg">

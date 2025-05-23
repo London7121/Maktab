@@ -26,7 +26,7 @@ export default function Arxitektura() {
             ) : (
                 <div className="flex flex-wrap items-center justify-center lg:flex-nowrap bg-white p-6 shadow-lg rounded-lg">
                     {/* Jadval (chap tomonda) */}
-                    <div className="w-full lg:w-1/2 pr-4">
+                    <div className="w-full lg:w-1/2 px-2 flex items-center justify-center">
                         <table className="w-full border-collapse border border-gray-300">
                             <thead>
                                 <tr className="bg-gray-200">

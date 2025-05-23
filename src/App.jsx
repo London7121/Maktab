@@ -22,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <MainLayout>
-        <div className="flex justify-center items-center h-full">
+        <div className=" h-full">
           <Suspense fallback={<Loading />}>
             {/* <SplashCursor /> */}
             <ScrollToTopBtn />

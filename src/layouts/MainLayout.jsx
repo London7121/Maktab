@@ -248,7 +248,7 @@ const MainLayout = ({ children }) => {
   ];
 
   return (
-    <Layout className="min-h-screen bg-[#f9f7f7] ">
+    <Layout className="min-h-screen bg-[#f9f7f7]">
       <div className="fixed w-full z-10 top-0 shadow h-auto py-2 sm:py-4 bg-misty-white backdrop-blur-md">
         <div className="w-full max-w-[1840px] mx-auto px-10 flex items-center justify-between md:py-0">
           <Link
@@ -332,7 +332,7 @@ const MainLayout = ({ children }) => {
 
       {currentSlide && <Banner slide={currentSlide} />}
       <Content className="flex justify-center items-center h-auto my-8 md:my-8">
-        <div className="w-full p-4">{children}</div>
+        <div className="w-full p-5">{children}</div>
       </Content>
       <Footer />
     </Layout>
