@@ -11,7 +11,7 @@ export const aboutData = {
     'Innovatsion ta\'lim usullarini joriy etish.',
     ],
     studentsCount:1209,
-    teacherssCount:234,
+    teacherssCount:154,
     classsesCount:46,
     predmetsCount:32,
 };

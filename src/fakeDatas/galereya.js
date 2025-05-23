@@ -1,38 +1,84 @@
+import rasm1 from '../assets/galereya/rasm1.jpg'
+import rasm2 from '../assets/galereya/rasm2.jpg'
+import rasm3 from '../assets/galereya/rasm3.jpg'
+import rasm4 from '../assets/galereya/rasm4.jpg'
+import rasm5 from '../assets/galereya/rasm5.jpg'
+import rasm6 from '../assets/galereya/rasm6.jpg'
+import rasm7 from '../assets/galereya/rasm7.jpg'
+import rasm8 from '../assets/galereya/rasm8.jpg'
+import rasm9 from '../assets/galereya/rasm9.jpg'
+import rasm10 from '../assets/galereya/rasm10.jpg'
+
 export const photos = [
   {
-    src: 'https://frankfurt.apollo.olxcdn.com/v1/files/n8i8f34is54z1-UZ/image;s=960x819',
+    src: rasm1,
     width: 4,
     height: 3,
     type: 'image',
     description: 'A beautiful view of Frankfurt.', // Description for the image
   },
   {
-    src: 'https://avatars.dzeninfra.ru/get-zen_doc/9859611/pub_64f1c1f0eabe18676ad2925c_64f1c7c5bbcc3b21e7190632/scale_1200',
-    width: 5,
+    src: rasm2,
+    width: 4,
     height: 3,
     type: 'image',
-    description: 'A scenic landscape captured in nature.',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
   },
   {
-    src: 'https://cdn3.riastatic.com/photosnew/auto/photo/mercedes-benz_cls-class__559427328f.jpg',
-    width: 6,
+    src: rasm3,
+    width: 4,
     height: 3,
     type: 'image',
-    description: 'A luxurious Mercedes Benz CLS class car.',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
   },
   {
-    src: 'https://avatars.dzeninfra.ru/get-zen_doc/9859611/pub_64f1c1f0eabe18676ad2925c_64f1c7c5bbcc3b21e7190632/scale_1200',
-    width: 6,
+    src: rasm4,
+    width: 4,
     height: 3,
     type: 'image',
-    description: 'Another stunning nature scene.',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
   },
   {
-    src: 'https://frankfurt.apollo.olxcdn.com/v1/files/n8i8f34is54z1-UZ/image;s=960x819',
-    width: 5,
+    src: rasm5,
+    width: 4,
     height: 3,
     type: 'image',
-    description: 'A picturesque view of the city.',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
+  },
+  {
+    src: rasm6,
+    width: 4,
+    height: 3,
+    type: 'image',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
+  },
+  {
+    src: rasm7,
+    width: 4,
+    height: 3,
+    type: 'image',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
+  },
+  {
+    src: rasm8,
+    width: 4,
+    height: 3,
+    type: 'image',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
+  },
+  {
+    src: rasm9,
+    width: 4,
+    height: 3,
+    type: 'image',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
+  },
+  {
+    src: rasm10,
+    width: 4,
+    height: 3,
+    type: 'image',
+    description: 'A beautiful view of Frankfurt.', // Description for the image
   },
 ];
 

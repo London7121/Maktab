@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 // import Gallery from 'react-photo-gallery';
 import { Skeleton, Card, Typography, Image } from 'antd'; // Typography for text styling
 import { photos, videos } from '../fakeDatas/galereya';
+import { useTranslation } from 'react-i18next';
 
 const { Title, Paragraph } = Typography;
 
 const Galereya = () => {
   const [loading, setLoading] = useState(true);
+  const { t, i18n } = useTranslation(); // useTranslation hook'ini chaqiramiz
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,7 +19,7 @@ const Galereya = () => {
   if (loading) {
     return (
       <div className="text-center w-[95%] mx-auto">
-        <h1 className="text-3xl font-bold my-6 text-[#32CD32]">Galereya</h1>
+        <h1 className="text-3xl font-bold my-6 text-[#32CD32]">{t("gallery")}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
           {[...Array(5)].map((_, index) => (
             <Skeleton.Image key={index} active paragraph={{ rows: 3 }} style={{ width: '300px', height: '200px' }} />
@@ -31,7 +33,7 @@ const Galereya = () => {
     <div className='font-afacad'>
       {/* Photos Section */}
       <div className="text-center ">
-        <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">Galereya</h1>
+        <h1 className="text-3xl font-bold my-6 text-[#6e54d8] uppercase">{t("gallery")}</h1>
         {/* <Gallery photos={photos} /> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
           {photos.map((photo, index) => {
@@ -72,7 +74,7 @@ const Galereya = () => {
 
       {/* Videos Section */}
       <div className="text-center mt-8">
-        <h1 className="text-3xl font-bold my-6 text-[#6e54d8]">Videolar</h1>
+        <h1 className="text-3xl font-bold my-6 text-[#6e54d8] uppercase">{t("videos")}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {videos.map((video, index) => (
             <Card key={index} bordered={false} style={{ width: '100%' }}>

@@ -5,6 +5,47 @@
     "teachers": "O'qituvchilar",
     "news": "Yangiliklar",
     "contact": "Aloqa",
+    "ism": "Ism",
+    "familiya": "Familiya",
+    "telefon": "Telefon",
+    "yuborish":"Yuborish",
+
+    "ismKirt":"Ismni kiriting",
+    "famKirt":"Familiyani kiriting",
+    "telKirt":"Telefon raqam kiriting",
+
     "acceptance": "Qabul",
-    "gallery": "Galereya"
+    "gallery": "Galereya",
+    "videos": "Videolar",
+    "students": "ta o'quvchi",
+    "teacher": "ta o'qituvchi",
+    "class": "ta sinf",
+    "predmet": "ta fan",
+    "schoolDataTitle": "Respublika ixtisoslashtirilgan dizayn maktabi haqida umumiy ma’lumot",
+    "schoolData": "Toshkentda ro‘y bergan 1966-yilgi zilzila vayronalarini tugatish va maxsus malakali mutaxassislar tayyorlash maqsadida Toshkent maxsus o‘rta texnik bilim yurti sifatida 1967-yil tashkil topgan. Uning sobiq talabalari Toshkent metrosi, muzeylar, ulkan inshootlar va uy-joylarni qurishda faol ishtirok etishgan. 1989-yilda Respublika o‘quv yurtlari orasida birinchi YUNESKOga a’zo bo‘ldi. 1984-yilda me’mor va quruvchi Asadulla Ashrapovich Xo‘jayev nomi berildi. 1994-yilda O‘zbekiston Respublikasi xalq ta’limi vazirligi buyrug‘iga asosan, milliy hunarmandchilik litseyiga aylantirildi.\n\nO‘zbekiston Respublikasi Prezidentining “O‘zbekiston Badiiy Akademiyasini tashkil etish haqida”gi 1997-yil 23-yanvardagi Farmoni va O‘zbekiston Respublikasi Vazirlar Mahkamasining “O‘zbekiston Badiiy Akademiyasining faoliyatini tashkil etish to‘g‘risida”gi 1997-yil 11-martdagi qaroriga asosan ta’lim muassasasi O‘zbekiston Badiiy Akademiyasi tasarrufidagi “A.A.Xo‘jayev nomidagi tasviriy va amaliy sanat bilim yurti” deb nomlandi. 2004-yil O‘zbekiston Respublikasi Badiiy Akademiyasi tasarrufidagi “A.A.Xo‘jayev nomidagi Respublika Dizayn kolleji” maqomi berildi.\n\nKollej maqomi va faoliyati o‘zgarishi bilan binolarda ta’mirlash va qayta ta’mirlash, o‘quv va ishlab chiqarish ta’lim ustaxonalarida yangi mutaxassisliklar bo‘yicha jihozlash ishlari o‘tkazildi. Xalq deputatlari Toshkent shahar Kengashining 2013-yil 9-apreldagi “Toshkent shahridagi ba’zi geografik obyektlar nomlarini tartibga keltirish to‘g‘risida”gi 260/4-27-sonli qarori hamda Toshkent shahar O‘rta maxsus, kasb-hunar ta’limi boshqarmasining 2013-yil 19-iyuldagi 186-sonli buyrug‘iga binoan “A.A.Xo‘jayev nomidagi Respublika Dizayn kolleji”ga yangi “Respublika Dizayn kolleji” deb nom berildi. Kollej binosi 750 o‘ringa mo‘ljallangan bo‘lib, 5ta asosiy bino va 7ta yordamchi binolardan iborat.\n\nO‘zbekiston Respublikasi Vazirlar Mahkamasining 2019-yil 9-yanvardagi “Ixtisoslashtirilgan san’at va madaniyat maktablari hamda maktab-internetlarining faoliyatini tashkil etish to‘g‘risida”gi 9-sonli qarori hamda O‘zbekiston Badiiy akademiyasining 2019-yil 11-yanvardagi I-497-sonli buyrug‘iga asosan “Respublika Dizayn kolleji” “Respublika ixtisoslashtirilgan dizayn maktabi” deb yangi tahrirda nomlandi.",
+    "tgChannel": "Telegram kanalga o'tish",
+    "moreDesc": "Batafsil o'qish",
+    "hide": "Yashirish",
+    "more":"Batafsil",
+    "docs":"Topshiriladigan hujjatlar",
+    "2526qabul":"2025-2026 o'quv yilida quyidagi yo'nalishlar bo'yicha o'quvchilar saralab olinadi",
+    "schoolChief": "Mahtab direktori",
+    "sanoatDiz": "Sanoat dizayneri",
+    "qabulKun": "Qabul kunlari",
+
+    "zam1": "Ma'naviy va ma'rifiy ishlar",
+    "zam2": "bo'yicha direktor o'rinbosari",
+
+    "zam3": "O'quv ishlari bo'yicha",
+    "zam4": "direktor o'rinbosari",
+
+    "zam5": "Kasbiy ta’lim bo’yicha",
+    "zam6": "direktor o'rinbosari",
+
+    "zam7": "Bo'lim boshliqlar",
+
+    "arx":"Arxitektura bo'limi",
+    "dizayn":"Dizayn bo'limi",
+    "libos":"Liboslar bo'limi",
+    "tasvir":"Tasviriy va amaliy san'at bo'limi"
 }

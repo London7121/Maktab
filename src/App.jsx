@@ -5,7 +5,8 @@ import Loading from "./components/Loading";
 import { ScrollToTopBtn } from "./components/ScrollTopBtn";
 import SingleNews from "./pages/SingleNews";
 import "./App.css";
-import Leaders from "./pages/Leaders";
+// import Leaders from "./pages/Leaders";
+import LeaderAndChief from "./pages/LeaderAndChief";
 import SplashCursor from "./components/animatedCursor";
 
 // Use React.lazy to load components lazily
@@ -29,7 +30,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/teachers" element={<Teachers />} />
-              <Route path="/leader" element={<Leaders />} />
+              <Route path="/leader" element={<LeaderAndChief />} />
               <Route path="/news" element={<News />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/qabul" element={<Qabul />} />
